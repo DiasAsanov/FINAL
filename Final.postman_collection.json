@@ -1,0 +1,322 @@
+{
+	"info": {
+		"_postman_id": "47295aa1-0b19-4a7d-9a5d-4e1b3b0da3f1",
+		"name": "Final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27750407",
+		"_collection_link": "https://red-crater-452065.postman.co/workspace/7c87ebe3-d619-4ab4-b549-f79df28d10cc/collection/27750407-47295aa1-0b19-4a7d-9a5d-4e1b3b0da3f1?action=share&creator=27750407&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Account Authorized",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "NiceToMeetyou123!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "GoodJob1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"GoodJob1\",\r\n  \"password\": \"NiceToMeetyou123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/Account/v1/Authorized",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"Account",
+						"v1",
+						"Authorized"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"GoodJob1\",\r\n  \"password\": \"NiceToMeetyou123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/Account/v1/User",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"Account",
+						"v1",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account GenerateToken",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Ikdvb2RKb2IxIiwicGFzc3dvcmQiOiJOaWNlVG9NZWV0eW91MTIzISIsImlhdCI6MTY5MDEwMDc2MX0.aPNJhXL4sN8VNUBM7om9yLIXrqyY99F6ToRMCr5yoW0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"GoodJob1\",\r\n  \"password\": \"NiceToMeetyou123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/Account/v1/GenerateToken",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"Account",
+						"v1",
+						"GenerateToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account User",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "NiceToMeetyou123!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "GoodJob1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demoqa.com/Account/v1/User/c6574e1b-e424-4cc8-a714-880bd9305426",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"Account",
+						"v1",
+						"User",
+						"c6574e1b-e424-4cc8-a714-880bd9305426"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bookstore Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demoqa.com/BookStore/v1/Books/",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"BookStore",
+						"v1",
+						"Books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bookstore Books",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "NiceToMeetyou123!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "GoodJob1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"c6574e1b-e424-4cc8-a714-880bd9305426\",\r\n  \"collectionOfIsbns\": [\r\n    {\r\n      \"isbn\": \"9781593277574\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/BookStore/v1/Books/",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"BookStore",
+						"v1",
+						"Books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bookstore Book {ISBN}",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "NiceToMeetyou123!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "GoodJob1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"c6574e1b-e424-4cc8-a714-880bd9305426\",\r\n  \"isbn\": \"9781593275846\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/BookStore/v1/Books/9781593277574",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"BookStore",
+						"v1",
+						"Books",
+						"9781593277574"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bookstore Book",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "NiceToMeetyou123!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "GoodJob1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"isbn\": \"9781593277574\",\r\n  \"userId\": \"c6574e1b-e424-4cc8-a714-880bd9305426\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/BookStore/v1/Book",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"BookStore",
+						"v1",
+						"Book"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
